@@ -4,8 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import App from './components/app';
-import RentIndex from './components/rent_index';
+import MainPage from './components/app';
 import reducers from './reducers';
 import promise from 'redux-promise'
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
@@ -14,7 +13,7 @@ ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={RentIndex}/>
+        <Route path="/" component={MainPage}/>
       </Switch>
     </BrowserRouter>
   </Provider>

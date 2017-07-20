@@ -3,7 +3,7 @@ import {fetchRentals} from '../actions'
 import {connect} from 'react-redux'
 import _ from 'lodash'
 
-class RentIndex extends Component{
+class SearchBar extends Component{
   constructor(props){
     super(props)
     this.state = {
@@ -36,4 +36,4 @@ function mapStateToProps(state){
   return { rentals: state.rentals}
 }
 
-export default connect(mapStateToProps, {fetchRentals}) (RentIndex)
+export default connect(mapStateToProps, {fetchRentals}) (SearchBar)

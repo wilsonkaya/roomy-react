@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import SearchBar from '../containers/search_bar';
+import RentalsIndex from '../containers/rentals_index';
 
-export default class App extends Component {
+export default class MainPage extends Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <div>
+        <SearchBar/>
+        <RentalsIndex/>
+      </div>
     );
   }
 }
