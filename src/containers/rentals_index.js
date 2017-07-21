@@ -6,12 +6,12 @@ import _ from 'lodash'
 class RentalsIndex extends Component {
   renderRetanls(){
     // console.log(this.props.rentlas)
-    return _.map(this.props.rentals, posts =>{
-      return _.map(posts, post => {
+    return _.map(this.props.rentals, rents =>{
+      return _.map(rents, rent => {
         return(
-          <li className="list-group-item" key={post.id}>
-            <Link to={`/posts/${post.id}`}>
-              {post.title}
+          <li className="list-group-item" key={rent.id}>
+            <Link to={`/rentals/${rent.id}`}>
+              {rent.title}
             </Link>
           </li>
         )
