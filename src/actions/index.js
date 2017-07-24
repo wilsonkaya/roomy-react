@@ -15,6 +15,7 @@ export function fetchRentals(values){
 
 export function fetchRental(id){
   const request = axios.get(`${ROOT_URL}/rentals/${id}`)
+
   return{
     type: FETCH_RENTAL,
     payload: request
